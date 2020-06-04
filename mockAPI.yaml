@@ -1,0 +1,170 @@
+openapi: 3.0.0
+info:
+  title: TESTAPI
+  description: TESTAPI
+  version: 1.0.0
+paths:
+  /testlist:
+    get:
+      description: ArrayTEST
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  arrayExample:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                        testName:
+                          type: string
+              examples:
+                example:
+                  value:
+                    arrayExample:
+                      - id: 1
+                        testName: テスト太郎1
+                      - id: 2
+                        testName: テスト太郎2
+                      - id: 3
+                        testName: テスト太郎3
+                      - id: 4
+                        testName: テスト太郎4
+                      - id: 5
+                        testName: テスト太郎5
+                      - id: 6
+                        testName: テスト太郎6
+                      - id: 7
+                        testName: テスト太郎7
+                      - id: 8
+                        testName: テスト太郎8
+                      - id: 9
+                        testName: テスト太郎9
+                      - id: 10
+                        testName: テスト太郎10
+                      - id: 11
+                        testName: テスト太郎11
+                      - id: 12
+                        testName: テスト太郎12
+                      - id: 13
+                        testName: テスト太郎13
+                      - id: 14
+                        testName: テスト太郎14
+                      - id: 15
+                        testName: テスト太郎15
+                      - id: 16
+                        testName: テスト太郎16
+                      - id: 17
+                        testName: テスト太郎17
+                      - id: 18
+                        testName: テスト太郎18
+                      - id: 19
+                        testName: テスト太郎19
+                      - id: 20
+                        testName: テスト太郎20
+                      - id: 21
+                        testName: テスト太郎21
+                      - id: 22
+                        testName: テスト太郎22
+                      - id: 23
+                        testName: テスト太郎23
+                      - id: 24
+                        testName: テスト太郎24
+                      - id: 25
+                        testName: テスト太郎25
+                      - id: 26
+                        testName: テスト太郎26
+                      - id: 27
+                        testName: テスト太郎27
+                      - id: 28
+                        testName: テスト太郎28
+                      - id: 29
+                        testName: テスト太郎29
+                      - id: 30
+                        testName: テスト太郎30
+                      - id: 31
+                        testName: テスト太郎31
+                      - id: 32
+                        testName: テスト太郎32
+                      - id: 33
+                        testName: テスト太郎33
+                      - id: 34
+                        testName: テスト太郎34
+                      - id: 35
+                        testName: テスト太郎35
+                      - id: 36
+                        testName: テスト太郎36
+                      - id: 37
+                        testName: テスト太郎37
+                      - id: 38
+                        testName: テスト太郎38
+                      - id: 39
+                        testName: テスト太郎39
+                      - id: 40
+                        testName: テスト太郎40
+                      - id: 41
+                        testName: テスト太郎41
+                      - id: 42
+                        testName: テスト太郎42
+                      - id: 43
+                        testName: テスト太郎43
+                      - id: 44
+                        testName: テスト太郎44
+                      - id: 45
+                        testName: テスト太郎45
+                      - id: 46
+                        testName: テスト太郎46
+                      - id: 47
+                        testName: テスト太郎47
+                      - id: 48
+                        testName: テスト太郎48
+                      - id: 49
+                        testName: テスト太郎49
+                      - id: 50
+                        testName: テスト太郎50
+                      - id: 51
+                        testName: テスト太郎51
+                      - id: 52
+                        testName: テスト太郎52
+                      - id: 53
+                        testName: テスト太郎53
+                      - id: 54
+                        testName: テスト太郎54
+                      - id: 55
+                        testName: テスト太郎55
+                      - id: 56
+                        testName: テスト太郎56
+                      - id: 57
+                        testName: テスト太郎57
+                      - id: 58
+                        testName: テスト太郎58
+                      - id: 59
+                        testName: テスト太郎59
+                      - id: 60
+                        testName: テスト太郎60
+                      - id: 61
+                        testName: テスト太郎61
+                      - id: 62
+                        testName: テスト太郎62
+                      - id: 63
+                        testName: テスト太郎63
+                      - id: 64
+                        testName: テスト太郎64
+                      - id: 65
+                        testName: テスト太郎65
+                      - id: 66
+                        testName: テスト太郎66
+                      - id: 67
+                        testName: テスト太郎67
+                      - id: 68
+                        testName: テスト太郎68
+                      - id: 69
+                        testName: テスト太郎69
+                      - id: 70
+                        testName: テスト太郎70
