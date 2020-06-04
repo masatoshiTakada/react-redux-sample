@@ -8,24 +8,23 @@ import {
   } from './action';
   
   const initialState = {
-    isFetching: true,
+    isFetching: false,
     isError: false,
-    response: {},
+    arrayExample: [],
     count: {},
+    error: null
   };
   
   const mainState = (state = initialState, action) => {
     switch (action.type) {
       // API
       case REQUEST_FETCH:
-        return {
-          ...state,
-        };
+        return { ...state, isFetching: true };
         // API成功
       case SUCCEED_FETCH:
         return {
           ...state,
-          response: action.response,
+          arrayExample: action.response.arrayExample,
           isError: false,
           isFetching: false,
         };
@@ -35,21 +34,18 @@ import {
           ...state,
           isFetching: false,
           isError: true,
-          response: action.error,
+          error: action.error,
         };
       // 再レンダー
       case REQUEST_REFETCH:
-          console.log('refetch')
-        return {
-          ...state,
-        };
+        console.log('refetch')
+        return { ...state, isFetching: true };
       // 再レンダー成功
       case SUCCEED_REFETCH:
-        console.log(state.response);
         return {
           ...state,
-          response: [...state.response, action.results],
-          // response: state.response.concat([action.results]),
+          arrayExample: [...state.arrayExample, ...action.results.arrayExample],
+          isFetching: false,
         };
       // 再レンダーエラー
       case FAILED_REFETCH:
@@ -57,7 +53,7 @@ import {
           ...state,
           isFetching: false,
           isError: true,
-          response: action.reError,
+          error: action.reError,
         };
       default:
         return state;
