@@ -1,4 +1,5 @@
 import { createStore, applyMiddleware, compose } from 'redux';
+import logger from 'redux-logger';
 import createSagaMiddleware from 'redux-saga';
 
 import rootReducer from './reducers';
@@ -10,7 +11,7 @@ const store = createStore(
   rootReducer,
   initialState,
   compose(
-    applyMiddleware(sagaMiddleware),
+    applyMiddleware(sagaMiddleware, logger),
     window.devToolsExtension ? window.devToolsExtension() : (f) => f,
   ),
 );
