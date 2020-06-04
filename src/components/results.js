@@ -42,7 +42,7 @@ class Results extends React.Component {
 const mapStateToProps = (state) => ({
   isLoading: state.mainState.isFetching,
   isError: state.mainState.isError,
-  arrayExample: state.mainState.response.arrayExample
+  arrayExample: state.mainState.arrayExample
 });
 
 export default connect(mapStateToProps)(Results);
