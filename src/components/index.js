@@ -5,7 +5,7 @@ import Results from './results';
 import { requestFetch, requestReFetch } from '../redux/main/action';
 
 class Main extends React.Component {
-    componentWillMount() {
+    componentDidMount() {
         this.props.requestFetch()
     }
 
