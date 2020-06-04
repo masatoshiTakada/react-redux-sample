@@ -15,8 +15,10 @@ class Results extends React.Component {
         this.props.arrayExample.map(arr => {
           return (
             <table key={`table-${arr.id}`}>
-                <tr>{arr.id}</tr>
-                <tr>{arr.testName}</tr>
+              <tbody>
+              <tr><td>{arr.id}</td></tr>
+              <tr><td>{arr.testName}</td></tr>
+              </tbody>
             </table>
           )
         })
