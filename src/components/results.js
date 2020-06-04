@@ -16,7 +16,7 @@ class Results extends React.Component {
           return (
             <table key={`table-${i}`}>
               <tbody>
-              <tr><td>{arr.id}</td></tr>
+              <tr><td>{arr.id}  <span style={{ color: 'red' }}>#{i}</span></td></tr>
               <tr><td>{arr.testName}</td></tr>
               </tbody>
             </table>
